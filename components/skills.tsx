@@ -10,19 +10,19 @@ import {
   SiTypescript,
   SiReact,
   SiNextdotjs,
-  SiVuedotjs,
   SiTailwindcss,
   SiFramer,
   SiNodedotjs,
   SiExpress,
-  SiMongodb,
   SiPostgresql,
   SiFirebase,
   SiSupabase,
-  SiGraphql,
   SiJsonwebtokens,
-  SiDocker,
+  SiAngular,
+  SiIonic,
+  SiExpo,
 } from "react-icons/si"
+import { FaJava } from "react-icons/fa6";
 import { Tally2Icon as TbApi, SmartphoneIcon as TbDeviceMobile } from "lucide-react"
 
 const skillsData = [
@@ -36,11 +36,14 @@ const skillsData = [
       { name: "JavaScript", icon: <SiJavascript className="h-6 w-6 text-yellow-400" /> },
       { name: "TypeScript", icon: <SiTypescript className="h-6 w-6 text-blue-600" /> },
       { name: "React", icon: <SiReact className="h-6 w-6 text-cyan-400" /> },
+      { name: "React Native", icon: <SiReact className="h-6 w-6 text-cyan-400" /> },
       { name: "Next.js", icon: <SiNextdotjs className="h-6 w-6 text-white" /> },
-      { name: "Vue.js", icon: <SiVuedotjs className="h-6 w-6 text-green-500" /> },
       { name: "Tailwind CSS", icon: <SiTailwindcss className="h-6 w-6 text-cyan-400" /> },
       { name: "Framer Motion", icon: <SiFramer className="h-6 w-6 text-pink-500" /> },
       { name: "Responsive Design", icon: <TbDeviceMobile className="h-6 w-6 text-purple-400" /> },
+      { name: "Angular", icon: <SiAngular className="h-6 w-6 text-red-500" /> },
+      { name: "Ionic", icon: <SiIonic className="h-6 w-6 text-blue-500" /> },
+      { name: "Expo", icon: <SiExpo className="h-6 w-6 text-gray-800" /> },
     ],
   },
   {
@@ -50,14 +53,13 @@ const skillsData = [
     technologies: [
       { name: "Node.js", icon: <SiNodedotjs className="h-6 w-6 text-green-600" /> },
       { name: "Express.js", icon: <SiExpress className="h-6 w-6 text-gray-400" /> },
-      { name: "MongoDB", icon: <SiMongodb className="h-6 w-6 text-green-500" /> },
+      // { name: "MongoDB", icon: <SiMongodb className="h-6 w-6 text-green-500" /> },
       { name: "PostgreSQL", icon: <SiPostgresql className="h-6 w-6 text-blue-600" /> },
       { name: "Firebase", icon: <SiFirebase className="h-6 w-6 text-orange-400" /> },
       { name: "Supabase", icon: <SiSupabase className="h-6 w-6 text-green-500" /> },
       { name: "REST APIs", icon: <TbApi className="h-6 w-6 text-blue-400" /> },
-      { name: "GraphQL", icon: <SiGraphql className="h-6 w-6 text-pink-500" /> },
       { name: "JWT", icon: <SiJsonwebtokens className="h-6 w-6 text-purple-400" /> },
-      { name: "Docker", icon: <SiDocker className="h-6 w-6 text-blue-500" /> },
+      { name: "Java", icon: <FaJava className="h-6 w-6 text-red-600" /> }, // Using JavaScript icon as fallback for Java
     ],
   },
 ]

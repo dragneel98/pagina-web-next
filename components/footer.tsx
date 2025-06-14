@@ -68,7 +68,6 @@ export default function Footer() {
           className="border-t border-gray-800 mt-8 pt-8 text-center"
         >
           <p className="text-gray-400 flex items-center justify-center gap-1">
-            <span>&copy; {currentYear} - Todos los derechos reservados</span>
             <span className="inline-flex items-center">
               <span>Hecho con</span>
               <Heart className="h-4 w-4 text-green-400 mx-1 animate-pulse" />

@@ -42,7 +42,7 @@ export default function Contact() {
           >
             <h3 className="text-2xl font-bold mb-6 text-white">Información de contacto</h3>
 
-            <div className="space-y-6">
+            <div className="space-y-4">
               <motion.div
                 className="flex items-center gap-4 p-4 bg-gray-900/50 border border-gray-800 hover:border-green-400/30 rounded-lg transition-all"
                 whileHover={{ scale: 1.02 }}
@@ -149,7 +149,7 @@ export default function Contact() {
           </motion.div>
         </div>
 
-        {/* Sección de CV que ocupa todo el ancho */}
+        {/* Sección de CV que ocupa todo el ancho - Comentada temporalmente
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -172,6 +172,7 @@ export default function Contact() {
             </a>
           </div>
         </motion.div>
+        */}
       </div>
     </section>
   )

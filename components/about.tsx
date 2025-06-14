@@ -62,8 +62,8 @@ export default function About() {
               web.
             </p>
             <p className="text-gray-300 mb-6 leading-relaxed">
-              Con más de <span className="text-green-400 font-semibold">X años de experiencia</span>, he trabajado en
-              diversos proyectos que van desde sitios web corporativos hasta aplicaciones web complejas. Mi enfoque se
+              Con más de <span className="text-green-400 font-semibold">2 años de experiencia</span>, he trabajado en
+              diversos proyectos que van desde sitios web sencillos hasta aplicaciones web complejas. Mi enfoque se
               centra en la optimización del rendimiento, la accesibilidad y la experiencia del usuario.
             </p>
 

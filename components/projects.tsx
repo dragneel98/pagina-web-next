@@ -6,7 +6,6 @@ import { TypeAnimation } from "react-type-animation"
 import { ExternalLink, Github, ArrowRight } from "lucide-react"
 import Image from "next/image"
 
-// Datos de ejemplo para los proyectos
 const projectsData = [
   // {
   //   id: 1,
@@ -107,7 +106,7 @@ export default function Projects() {
                     transform: hoveredProject === project.id ? "scale(1.05)" : "scale(1)",
                   }}
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/50 to-transparent"></div>
+                <div className="absolute inset-0 bg-gradient-to-t from-black/95 via-black/70 to-black/30"></div>
 
                 <div className="absolute bottom-0 left-0 right-0 p-6">
                   <h3 className="text-xl font-bold text-white mb-2">{project.title}</h3>
