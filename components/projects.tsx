@@ -21,7 +21,7 @@ const projectsData = [
     id: 1,
     title: "Retro-byte-ui",
     description: "Una libreria de componentes hecha con react y typescript que incluye storybook para la documentacion y github actions para el auto deploy, desplegada en vercel y con un paquete publicado en npm",
-    image: "/assets/componentes.jpg",
+    image: "/componentes.jpg",
     demoLink: "https://retro-byte-ui.vercel.app/?path=/docs/components-accordion--docs",
     codeLink: "https://github.com/dragneel98/retro-byte-ui",
     tags: ["typescript", "html", "css", "javascript", "react"]
@@ -30,7 +30,7 @@ const projectsData = [
     id: 2,
     title: "MELI-zomm",
     description: "Me interese por la funcionalidad del zoom de mercado libre y decidi replicarlo",
-    image: "/assets/MELI.png",
+    image: "/MELI.png",
     demoLink: "https://dragneel98.github.io/MELI-zoom/",
     codeLink: "https://github.com/dragneel98/MELI-zoom",
     tags: ["typescript", "html", "css", "javascript", "react"]
@@ -39,7 +39,7 @@ const projectsData = [
     id: 3,
     title: "Traslate GPT",
     description: "Un traductor utilizando la API de ChatGPT para hacer las traducciones. También cuenta con un botón para invertir el idioma y permite reproducir la traducción para que veas la pronunciación.",
-    image: "/assets/traslate.jpg",
+    image: "/traslate.jpg",
     demoLink: "",
     codeLink: "https://github.com/dragneel98/type-script-traslate",
     tags: ["typescript", "html", "css", "javascript", "react"]
@@ -48,7 +48,7 @@ const projectsData = [
     id: 4,
     title: "Ecommerce",
     description: "Un ecommerce que incluye inicio de sesión para usuarios, un sistema de carrito de compras intuitivo y eficiente, así como herramientas de filtrado de productos para facilitar la búsqueda y selección de artículos",
-    image: "/assets/eccomerce.jpg",
+    image: "/eccomerce.jpg",
     demoLink: "https://dragneel98.github.io/ecommerce-react/",
     codeLink: "https://github.com/dragneel98/ecommerce-react",
     tags: ["html", "css", "javascript", "react"]
