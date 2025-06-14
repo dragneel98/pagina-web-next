@@ -1,7 +1,7 @@
 "use client"
 
 import { motion } from "framer-motion"
-import { Github, Linkedin, Twitter, Heart } from "lucide-react"
+import { Github, Linkedin, Heart } from "lucide-react"
 import Link from "next/link"
 
 export default function Footer() {
@@ -47,16 +47,6 @@ export default function Footer() {
             >
               <Linkedin className="h-5 w-5 text-gray-300 hover:text-green-400" />
               <span className="sr-only">LinkedIn</span>
-            </a>
-
-            <a
-              href="#"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="bg-gray-900 hover:bg-green-400/20 border border-gray-700 hover:border-green-400/30 p-2 rounded-full transition-all transform hover:scale-110"
-            >
-              <Twitter className="h-5 w-5 text-gray-300 hover:text-green-400" />
-              <span className="sr-only">Twitter</span>
             </a>
           </motion.div>
         </div>

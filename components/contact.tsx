@@ -72,19 +72,6 @@ export default function Contact() {
                   </a>
                 </div>
               </motion.div>
-
-              <motion.div
-                className="flex items-center gap-4 p-4 bg-gray-900/50 border border-gray-800 hover:border-green-400/30 rounded-lg transition-all"
-                whileHover={{ scale: 1.02 }}
-              >
-                <div className="bg-green-400/20 p-3 rounded-full">
-                  <MapPin className="h-6 w-6 text-green-400" />
-                </div>
-                <div>
-                  <h4 className="text-lg font-medium text-white">Ubicación</h4>
-                  <p className="text-gray-300">Tu Ciudad, País</p>
-                </div>
-              </motion.div>
             </div>
           </motion.div>
 
@@ -127,22 +114,6 @@ export default function Contact() {
                 <div>
                   <h4 className="text-lg font-medium text-white">LinkedIn</h4>
                   <p className="text-gray-300">@tu-perfil</p>
-                </div>
-              </motion.a>
-
-              <motion.a
-                href="#"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="flex items-center gap-4 p-4 bg-gray-900/50 border border-gray-800 hover:border-green-400/30 rounded-lg transition-all group"
-                whileHover={{ scale: 1.02 }}
-              >
-                <div className="bg-green-400/20 p-3 rounded-full group-hover:bg-green-400/30 transition-colors">
-                  <Twitter className="h-6 w-6 text-green-400" />
-                </div>
-                <div>
-                  <h4 className="text-lg font-medium text-white">Twitter</h4>
-                  <p className="text-gray-300">@tu-usuario</p>
                 </div>
               </motion.a>
             </div>
