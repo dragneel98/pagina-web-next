@@ -52,8 +52,8 @@ export default function Contact() {
                 </div>
                 <div>
                   <h4 className="text-lg font-medium text-white">Email</h4>
-                  <a href="mailto:tu@email.com" className="text-gray-300 hover:text-green-400 transition-colors">
-                    tu@email.com
+                  <a href="mailto:gonzalo.mina@hotmail.com.ar" className="text-gray-300 hover:text-green-400 transition-colors">
+                  gonzalo.mina@hotmail.com.ar
                   </a>
                 </div>
               </motion.div>
@@ -68,7 +68,7 @@ export default function Contact() {
                 <div>
                   <h4 className="text-lg font-medium text-white">Teléfono</h4>
                   <a href="tel:+123456789" className="text-gray-300 hover:text-green-400 transition-colors">
-                    +12 345 6789
+                    +11 66176922
                   </a>
                 </div>
               </motion.div>
@@ -86,7 +86,7 @@ export default function Contact() {
 
             <div className="space-y-4">
               <motion.a
-                href="#"
+                href="https://github.com/dragneel98"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center gap-4 p-4 bg-gray-900/50 border border-gray-800 hover:border-green-400/30 rounded-lg transition-all group"
@@ -97,12 +97,12 @@ export default function Contact() {
                 </div>
                 <div>
                   <h4 className="text-lg font-medium text-white">GitHub</h4>
-                  <p className="text-gray-300">@tu-usuario</p>
+                  <p className="text-gray-300">@dragneel98</p>
                 </div>
               </motion.a>
 
               <motion.a
-                href="#"
+                href="https://www.linkedin.com/in/gonzalo-mina-frontend-dev/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center gap-4 p-4 bg-gray-900/50 border border-gray-800 hover:border-green-400/30 rounded-lg transition-all group"
@@ -113,7 +113,7 @@ export default function Contact() {
                 </div>
                 <div>
                   <h4 className="text-lg font-medium text-white">LinkedIn</h4>
-                  <p className="text-gray-300">@tu-perfil</p>
+                  <p className="text-gray-300">@gonzalo-mina</p>
                 </div>
               </motion.a>
             </div>

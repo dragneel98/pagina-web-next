@@ -17,7 +17,7 @@ export default function Hero() {
           <span className="text-white">Hola, soy </span>
           <span className="text-green-400">
             <TypeAnimation
-              sequence={["Desarrollador Frontend", 2000, "Diseñador UI/UX", 2000, "Creador Web", 2000]}
+              sequence={["Desarrollador Frontend", 2000, "Desarrollador Mobile", 2000, "Creador De Experiencias", 2000]}
               wrapper="span"
               speed={50}
               repeat={Number.POSITIVE_INFINITY}

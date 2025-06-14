@@ -38,7 +38,7 @@ export default function About() {
           >
             <div className="w-full h-80 md:h-96 relative rounded-lg overflow-hidden border-2 border-green-400/30">
               <Image
-                src="/placeholder.svg?height=400&width=400"
+                src="/foto-perfil-0.jpeg"
                 alt="Desarrollador Frontend"
                 fill
                 className="object-cover"
