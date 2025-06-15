@@ -153,10 +153,10 @@ export default function Projects() {
           viewport={{ once: true }}
           className="text-center mt-12"
         >
-          <a href="#" className="inline-flex items-center gap-2 text-green-400 hover:text-green-300 transition-colors">
+          {/* <a href="#" className="inline-flex items-center gap-2 text-green-400 hover:text-green-300 transition-colors">
             <span>Ver más proyectos</span>
             <ArrowRight size={16} />
-          </a>
+          </a> */}
         </motion.div>
       </div>
     </section>
