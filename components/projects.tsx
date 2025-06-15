@@ -20,7 +20,7 @@ const projectsData = [
     id: 1,
     title: "Retro-byte-ui",
     description: "Una libreria de componentes hecha con react y typescript que incluye storybook para la documentacion y github actions para el auto deploy, desplegada en vercel y con un paquete publicado en npm",
-    image: "/componentes.jpg",
+    image: "/adcard.jpg",
     demoLink: "https://retro-byte-ui.vercel.app/?path=/docs/components-accordion--docs",
     codeLink: "https://github.com/dragneel98/retro-byte-ui",
     tags: ["typescript", "html", "css", "javascript", "react"]

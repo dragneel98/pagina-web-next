@@ -3,6 +3,7 @@
 import { motion } from "framer-motion"
 import { TypeAnimation } from "react-type-animation"
 import { Code2, Compass, Lightbulb, Rocket, Smartphone } from 'lucide-react'
+import MatrixRain from './MatrixRain'
 import Image from "next/image"
 
 export default function About() {
@@ -70,16 +71,18 @@ export default function About() {
             className="relative"
           >
             <div className="w-full h-80 md:h-96 relative rounded-lg overflow-hidden border-2 border-green-400/30">
-              <Image
-                src="/foto-perfil-0.jpeg"
-                alt="Desarrollador Frontend"
-                fill
-                className="object-cover"
-              />
+              <div className="absolute inset-0">
+                <Image
+                  src="/imagen_perfil_3.jpg"
+                  alt="Desarrollador Frontend"
+                  fill
+                  className="object-cover"
+                  priority
+                />
+              </div>
               <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent"></div>
+              <MatrixRain containerClassName="absolute inset-0 mix-blend-screen" />
             </div>
-            <div className="absolute -bottom-5 -right-5 w-32 h-32 border-2 border-green-400 rounded-lg"></div>
-            <div className="absolute -top-5 -left-5 w-32 h-32 border-2 border-green-400 rounded-lg"></div>
           </motion.div>
 
           <motion.div
