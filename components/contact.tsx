@@ -6,7 +6,7 @@ import { Mail, Phone, MapPin, Github, Linkedin, Twitter, Download } from "lucide
 
 export default function Contact() {
   return (
-    <section id="contact" className="py-20 px-4 bg-black/50">
+    <section id="contact" className="py-8 sm:py-12 md:py-20 px-2 sm:px-4 bg-black/50">
       <div className="container mx-auto max-w-4xl">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -52,7 +52,7 @@ export default function Contact() {
                 </div>
                 <div>
                   <h4 className="text-lg font-medium text-white">Email</h4>
-                  <a href="mailto:gonzalo.mina@hotmail.com.ar" className="text-gray-300 hover:text-green-400 transition-colors">
+                  <a href="mailto:gonzalo.mina@hotmail.com.ar" className="text-xs sm:text-sm text-gray-300 hover:text-green-400 transition-colors break-all whitespace-normal">
                   gonzalo.mina@hotmail.com.ar
                   </a>
                 </div>
