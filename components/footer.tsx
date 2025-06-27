@@ -22,33 +22,6 @@ export default function Footer() {
             </Link>
             <p className="text-gray-400 mt-2">Desarrollador Frontend creando experiencias web únicas</p>
           </motion.div>
-
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.2 }}
-            className="flex gap-4"
-          >
-            <a
-              href="#"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="bg-gray-900 hover:bg-green-400/20 border border-gray-700 hover:border-green-400/30 p-2 rounded-full transition-all transform hover:scale-110"
-            >
-              <Github className="h-5 w-5 text-gray-300 hover:text-green-400" />
-              <span className="sr-only">GitHub</span>
-            </a>
-
-            <a
-              href="#"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="bg-gray-900 hover:bg-green-400/20 border border-gray-700 hover:border-green-400/30 p-2 rounded-full transition-all transform hover:scale-110"
-            >
-              <Linkedin className="h-5 w-5 text-gray-300 hover:text-green-400" />
-              <span className="sr-only">LinkedIn</span>
-            </a>
-          </motion.div>
         </div>
 
         <motion.div
