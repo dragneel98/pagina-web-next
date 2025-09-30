@@ -43,14 +43,23 @@ const projectsData = [
     codeLink: "https://github.com/dragneel98/type-script-traslate",
     tags: ["typescript", "html", "css", "javascript", "react"]
   },
-  {
+  // {
+  //   id: 4,
+  //   title: "Ecommerce",
+  //   description: "Un ecommerce que incluye inicio de sesión para usuarios, un sistema de carrito de compras intuitivo y eficiente, así como herramientas de filtrado de productos para facilitar la búsqueda y selección de artículos",
+  //   image: "/eccomerce.jpg",
+  //   demoLink: "https://dragneel98.github.io/ecommerce-react/",
+  //   codeLink: "https://github.com/dragneel98/ecommerce-react",
+  //   tags: ["html", "css", "javascript", "react"]
+  // },
+    {
     id: 4,
-    title: "Ecommerce",
-    description: "Un ecommerce que incluye inicio de sesión para usuarios, un sistema de carrito de compras intuitivo y eficiente, así como herramientas de filtrado de productos para facilitar la búsqueda y selección de artículos",
-    image: "/eccomerce.jpg",
-    demoLink: "https://dragneel98.github.io/ecommerce-react/",
-    codeLink: "https://github.com/dragneel98/ecommerce-react",
-    tags: ["html", "css", "javascript", "react"]
+    title: "TuAutoInforme",
+    description: "Un sistema para generar informes sobre los historiales de los vehículos",
+    image: "/auto.png",
+    demoLink: "https://tuautoinforme.com/",
+    // codeLink: "https://github.com/dragneel98/ecommerce-react",
+    tags: ["html", "css", "javascript", "react", "node.js", "typescript"]
   },
 ]
 

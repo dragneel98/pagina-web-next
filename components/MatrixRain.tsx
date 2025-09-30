@@ -26,7 +26,6 @@ export default function MatrixRain({
     const fontSize = 14;
     let columns = 0;
     const drops: number[] = [];
-    let interval: NodeJS.Timeout;
 
     // Configuración inicial del canvas
     function setupCanvas() {
