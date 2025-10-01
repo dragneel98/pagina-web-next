@@ -2,7 +2,7 @@
 
 import { motion } from "framer-motion"
 import { TypeAnimation } from "react-type-animation"
-import { Mail, Phone, MapPin, Github, Linkedin, Twitter, Download } from "lucide-react"
+import { Mail, Github, Linkedin, Download } from "lucide-react"
 
 export default function Contact() {
   return (
@@ -32,91 +32,73 @@ export default function Contact() {
           </p>
         </motion.div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-start mb-12">
+        <div className="grid grid-cols-[300px_1fr_1fr] gap-6 md:gap-8 items-start mb-12">
           <motion.div
             initial={{ opacity: 0, x: -50 }}
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8 }}
             viewport={{ once: true }}
-            className="space-y-8"
           >
-            <h3 className="text-2xl font-bold mb-6 text-white">Información de contacto</h3>
-
-            <div className="space-y-4">
-              <motion.div
-                className="flex items-center gap-4 p-4 bg-gray-900/50 border border-gray-800 hover:border-green-400/30 rounded-lg transition-all"
-                whileHover={{ scale: 1.02 }}
-              >
-                <div className="bg-green-400/20 p-3 rounded-full">
-                  <Mail className="h-6 w-6 text-green-400" />
-                </div>
-                <div>
-                  <h4 className="text-lg font-medium text-white">Email</h4>
-                  <a href="mailto:gonzalo.mina@hotmail.com.ar" className="text-xs sm:text-sm text-gray-300 hover:text-green-400 transition-colors break-all whitespace-normal">
-                  gonzalo.mina@hotmail.com.ar
-                  </a>
-                </div>
-              </motion.div>
-
-              <motion.div
-                className="flex items-center gap-4 p-4 bg-gray-900/50 border border-gray-800 hover:border-green-400/30 rounded-lg transition-all"
-                whileHover={{ scale: 1.02 }}
-              >
-                <div className="bg-green-400/20 p-3 rounded-full">
-                  <Phone className="h-6 w-6 text-green-400" />
-                </div>
-                <div>
-                  <h4 className="text-lg font-medium text-white">Teléfono</h4>
-                  <a href="tel:+123456789" className="text-gray-300 hover:text-green-400 transition-colors">
-                    +11 66176922
-                  </a>
-                </div>
-              </motion.div>
-            </div>
+            <motion.div
+              className="flex items-center gap-4 p-4 bg-gray-900/50 border border-gray-800 hover:border-green-400/30 rounded-lg transition-all"
+              whileHover={{ scale: 1.02 }}
+            >
+              <div className="bg-green-400/20 p-3 rounded-full">
+                <Mail className="h-6 w-6 text-green-400" />
+              </div>
+              <div>
+                <h4 className="text-lg font-medium text-white">Email</h4>
+                <a href="mailto:gonzalo.mina@hotmail.com.ar" className="text-xs sm:text-sm text-gray-300 hover:text-green-400 transition-colors break-all whitespace-normal">
+                gonzalo.mina@hotmail.com.ar
+                </a>
+              </div>
+            </motion.div>
           </motion.div>
 
           <motion.div
-            initial={{ opacity: 0, x: 50 }}
-            whileInView={{ opacity: 1, x: 0 }}
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
             viewport={{ once: true }}
-            className="space-y-8"
           >
-            <h3 className="text-2xl font-bold mb-6 text-white">Sígueme en redes</h3>
+            <motion.a
+              href="https://github.com/dragneel98"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-4 p-4 bg-gray-900/50 border border-gray-800 hover:border-green-400/30 rounded-lg transition-all group"
+              whileHover={{ scale: 1.02 }}
+            >
+              <div className="bg-green-400/20 p-3 rounded-full group-hover:bg-green-400/30 transition-colors">
+                <Github className="h-6 w-6 text-green-400" />
+              </div>
+              <div>
+                <h4 className="text-lg font-medium text-white">GitHub</h4>
+                <p className="text-gray-300">@dragneel98</p>
+              </div>
+            </motion.a>
+          </motion.div>
 
-            <div className="space-y-4">
-              <motion.a
-                href="https://github.com/dragneel98"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="flex items-center gap-4 p-4 bg-gray-900/50 border border-gray-800 hover:border-green-400/30 rounded-lg transition-all group"
-                whileHover={{ scale: 1.02 }}
-              >
-                <div className="bg-green-400/20 p-3 rounded-full group-hover:bg-green-400/30 transition-colors">
-                  <Github className="h-6 w-6 text-green-400" />
-                </div>
-                <div>
-                  <h4 className="text-lg font-medium text-white">GitHub</h4>
-                  <p className="text-gray-300">@dragneel98</p>
-                </div>
-              </motion.a>
-
-              <motion.a
-                href="https://www.linkedin.com/in/gonzalo-mina-frontend-dev/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="flex items-center gap-4 p-4 bg-gray-900/50 border border-gray-800 hover:border-green-400/30 rounded-lg transition-all group"
-                whileHover={{ scale: 1.02 }}
-              >
-                <div className="bg-green-400/20 p-3 rounded-full group-hover:bg-green-400/30 transition-colors">
-                  <Linkedin className="h-6 w-6 text-green-400" />
-                </div>
-                <div>
-                  <h4 className="text-lg font-medium text-white">LinkedIn</h4>
-                  <p className="text-gray-300">@gonzalo-mina</p>
-                </div>
-              </motion.a>
-            </div>
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 0.4 }}
+            viewport={{ once: true }}
+          >
+            <motion.a
+              href="https://www.linkedin.com/in/gonzalo-mina-frontend-dev/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-4 p-4 bg-gray-900/50 border border-gray-800 hover:border-green-400/30 rounded-lg transition-all group"
+              whileHover={{ scale: 1.02 }}
+            >
+              <div className="bg-green-400/20 p-3 rounded-full group-hover:bg-green-400/30 transition-colors">
+                <Linkedin className="h-6 w-6 text-green-400" />
+              </div>
+              <div>
+                <h4 className="text-lg font-medium text-white">LinkedIn</h4>
+                <p className="text-gray-300">@gonzalo-mina</p>
+              </div>
+            </motion.a>
           </motion.div>
         </div>
 

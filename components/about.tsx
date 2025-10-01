@@ -93,7 +93,7 @@ export default function About() {
           >
             <h3 className="text-2xl font-bold mb-4 text-green-400">¿Quién soy?</h3>
             <p className="text-gray-300 mb-6 leading-relaxed">
-              Soy gonzalo mina un desarrollador frontend apasionado por crear experiencias web interactivas y atractivas. Me
+              Soy gonzalo mina un desarrollador frontend de buenos aires, apasionado por crear experiencias web interactivas y atractivas. Me
               especializo en construir interfaces de usuario modernas y responsivas utilizando las últimas tecnologías
               web.
             </p>
