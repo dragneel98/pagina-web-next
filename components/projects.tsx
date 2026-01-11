@@ -7,15 +7,6 @@ import { ExternalLink, Github, ArrowRight } from "lucide-react"
 import Image from "next/image"
 
 const projectsData = [
-  // {
-  //   id: 1,
-  //   title: "E-commerce Moderno",
-  //   description: "Tienda online con carrito de compras, pagos y panel de administración.",
-  //   tags: ["React", "Next.js", "Tailwind CSS", "Stripe"],
-  //   image: "/placeholder.svg?height=600&width=800",
-  //   demoUrl: "#",
-  //   codeUrl: "#",
-  // },
   {
     id: 1,
     title: "Retro-byte-ui",
@@ -43,17 +34,17 @@ const projectsData = [
     codeLink: "https://github.com/dragneel98/type-script-traslate",
     tags: ["typescript", "html", "css", "javascript", "react"]
   },
-  // {
-  //   id: 4,
-  //   title: "Ecommerce",
-  //   description: "Un ecommerce que incluye inicio de sesión para usuarios, un sistema de carrito de compras intuitivo y eficiente, así como herramientas de filtrado de productos para facilitar la búsqueda y selección de artículos",
-  //   image: "/eccomerce.jpg",
-  //   demoLink: "https://dragneel98.github.io/ecommerce-react/",
-  //   codeLink: "https://github.com/dragneel98/ecommerce-react",
-  //   tags: ["html", "css", "javascript", "react"]
-  // },
-    {
+  {
     id: 4,
+    title: "Ecommerce",
+    description: "Un ecommerce que incluye un sistema de carrito de compras intuitivo y eficiente, así como herramientas de filtrado y busqueda de productos para facilitar la selección de artículos",
+    image: "/angularshop.jpg",
+    demoLink: "https://dragneel98.github.io/ecomerce-angular/",
+    codeLink: "https://github.com/dragneel98/ecomerce-angular",
+    tags: ["html", "css", "javascript", "angular"]
+  },
+  {
+    id: 5,
     title: "TuAutoInforme",
     description: "Un sistema para generar informes sobre los historiales de los vehículos",
     image: "/auto.png",
@@ -65,6 +56,12 @@ const projectsData = [
 
 export default function Projects() {
   const [hoveredProject, setHoveredProject] = useState<number | null>(null)
+  const [visibleProjects, setVisibleProjects] = useState(4)
+
+  const handleLoadMore = () => {
+    setVisibleProjects((prev) => prev + 2)
+  }
+
 
   return (
     <section id="projects" className="py-20 px-4 bg-black/50">
@@ -94,7 +91,7 @@ export default function Projects() {
         </motion.div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-          {projectsData.map((project, index) => (
+          {projectsData.slice(0, visibleProjects).map((project, index) => (
             <motion.div
               key={project.id}
               initial={{ opacity: 0, y: 30 }}
@@ -155,18 +152,18 @@ export default function Projects() {
           ))}
         </div>
 
-        <motion.div
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
-          transition={{ duration: 0.8, delay: 0.6 }}
-          viewport={{ once: true }}
-          className="text-center mt-12"
-        >
-          {/* <a href="#" className="inline-flex items-center gap-2 text-green-400 hover:text-green-300 transition-colors">
-            <span>Ver más proyectos</span>
-            <ArrowRight size={16} />
-          </a> */}
-        </motion.div>
+        {/* Forced true condition for debugging */}
+        {visibleProjects < projectsData.length && (
+          <div className="text-center mt-12">
+            <button
+              onClick={handleLoadMore}
+              className="inline-flex items-center gap-2 text-green-400 hover:text-green-300 transition-colors"
+            >
+              <span>Ver más proyectos</span>
+              <ArrowRight size={16} />
+            </button>
+          </div>
+        )}
       </div>
     </section>
   )
