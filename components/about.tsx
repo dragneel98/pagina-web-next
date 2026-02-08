@@ -9,8 +9,8 @@ import Image from "next/image"
 export default function About() {
   const fadeInUp = {
     hidden: { opacity: 0, y: 60 },
-    visible: { 
-      opacity: 1, 
+    visible: {
+      opacity: 1,
       y: 0,
       transition: {
         duration: 0.5,
@@ -35,8 +35,8 @@ export default function About() {
     },
     {
       icon: <Rocket className="w-6 h-6 text-green-400" />,
-      title: 'Optimización',
-      description: 'Aseguro que todas mis aplicaciones sean rápidas, accesibles y escalables.'
+      title: 'Desarrollo backend',
+      description: 'Desarrollo APIs RESTful con arquitecturas escalables y seguras.'
     }
   ];
   return (
@@ -93,7 +93,7 @@ export default function About() {
           >
             <h3 className="text-2xl font-bold mb-4 text-green-400">¿Quién soy?</h3>
             <p className="text-gray-300 mb-6 leading-relaxed">
-              Soy gonzalo mina un desarrollador frontend de buenos aires, apasionado por crear experiencias web interactivas y atractivas. Me
+              Soy gonzalo mina un desarrollador web de buenos aires, apasionado por crear experiencias web interactivas y atractivas. Me
               especializo en construir interfaces de usuario modernas y responsivas utilizando las últimas tecnologías
               web.
             </p>
@@ -106,19 +106,19 @@ export default function About() {
             <div className="grid grid-cols-2 gap-4 mb-6">
               <div className="flex items-center">
                 <div className="w-2 h-2 bg-green-400 rounded-full mr-2"></div>
-                <span className="text-gray-300">React / Next.js</span>
+                <span className="text-gray-300">Diseño y consumo de APIs REST</span>
               </div>
               <div className="flex items-center">
                 <div className="w-2 h-2 bg-green-400 rounded-full mr-2"></div>
-                <span className="text-gray-300">TypeScript</span>
+                <span className="text-gray-300">Desarrollo y entrega de soluciones completas</span>
               </div>
               <div className="flex items-center">
                 <div className="w-2 h-2 bg-green-400 rounded-full mr-2"></div>
-                <span className="text-gray-300">Tailwind CSS</span>
+                <span className="text-gray-300">Control de versiones y flujos de trabajo colaborativos</span>
               </div>
               <div className="flex items-center">
                 <div className="w-2 h-2 bg-green-400 rounded-full mr-2"></div>
-                <span className="text-gray-300">Framer Motion</span>
+                <span className="text-gray-300">Arquitectura y mantenimiento de aplicaciones</span>
               </div>
             </div>
 

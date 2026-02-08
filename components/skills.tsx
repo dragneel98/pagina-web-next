@@ -3,6 +3,7 @@
 import { motion } from "framer-motion"
 import { TypeAnimation } from "react-type-animation"
 import { Code2, Database } from "lucide-react"
+import { TbBrandCSharp } from "react-icons/tb";
 import {
   SiHtml5,
   SiCss3,
@@ -21,6 +22,7 @@ import {
   SiAngular,
   SiIonic,
   SiExpo,
+  SiDotnet
 } from "react-icons/si"
 import { FaJava } from "react-icons/fa6";
 import { Tally2Icon as TbApi, SmartphoneIcon as TbDeviceMobile } from "lucide-react"
@@ -53,13 +55,13 @@ const skillsData = [
     technologies: [
       { name: "Node.js", icon: <SiNodedotjs className="h-6 w-6 text-green-600" /> },
       { name: "Express.js", icon: <SiExpress className="h-6 w-6 text-gray-400" /> },
-      // { name: "MongoDB", icon: <SiMongodb className="h-6 w-6 text-green-500" /> },
       { name: "PostgreSQL", icon: <SiPostgresql className="h-6 w-6 text-blue-600" /> },
-      // { name: "Firebase", icon: <SiFirebase className="h-6 w-6 text-orange-400" /> },
       { name: "Supabase", icon: <SiSupabase className="h-6 w-6 text-green-500" /> },
       { name: "REST APIs", icon: <TbApi className="h-6 w-6 text-blue-400" /> },
       { name: "JWT", icon: <SiJsonwebtokens className="h-6 w-6 text-purple-400" /> },
-      { name: "Java", icon: <FaJava className="h-6 w-6 text-red-600" /> }, // Using JavaScript icon as fallback for Java
+      { name: "Java", icon: <FaJava className="h-6 w-6 text-red-600" /> },
+      { name: "C#", icon: <TbBrandCSharp className="h-6 w-6 text-blue-600" /> },
+      { name: ".Net", icon: <SiDotnet className="h-6 w-6 text-blue-600" /> },
     ],
   },
 ]

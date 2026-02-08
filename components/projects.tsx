@@ -18,24 +18,16 @@ const projectsData = [
   },
   {
     id: 2,
-    title: "MELI-zomm",
-    description: "Me interese por la funcionalidad del zoom de mercado libre y decidi replicarlo",
-    image: "/MELI.png",
-    demoLink: "https://dragneel98.github.io/MELI-zoom/",
-    codeLink: "https://github.com/dragneel98/MELI-zoom",
-    tags: ["typescript", "html", "css", "javascript", "react"]
+    title: "TuAutoInforme",
+    description: "Un sistema para generar informes sobre los historiales de los vehículos",
+    image: "/auto.png",
+    demoLink: "https://tuautoinforme.com/",
+    // codeLink: "https://github.com/dragneel98/ecommerce-react",
+    tags: ["html", "css", "javascript", "react", "node.js", "typescript"]
   },
+
   {
     id: 3,
-    title: "Traslate GPT",
-    description: "Un traductor utilizando la API de ChatGPT para hacer las traducciones. También cuenta con un botón para invertir el idioma y permite reproducir la traducción para que veas la pronunciación.",
-    image: "/traslate.jpg",
-    demoLink: "",
-    codeLink: "https://github.com/dragneel98/type-script-traslate",
-    tags: ["typescript", "html", "css", "javascript", "react"]
-  },
-  {
-    id: 4,
     title: "Ecommerce",
     description: "Un ecommerce que incluye un sistema de carrito de compras intuitivo y eficiente, así como herramientas de filtrado y busqueda de productos para facilitar la selección de artículos",
     image: "/angularshop.jpg",
@@ -44,14 +36,33 @@ const projectsData = [
     tags: ["html", "css", "javascript", "angular"]
   },
   {
-    id: 5,
-    title: "TuAutoInforme",
-    description: "Un sistema para generar informes sobre los historiales de los vehículos",
-    image: "/auto.png",
-    demoLink: "https://tuautoinforme.com/",
-    // codeLink: "https://github.com/dragneel98/ecommerce-react",
-    tags: ["html", "css", "javascript", "react", "node.js", "typescript"]
+    id: 4,
+    title: "Api Ecommerce",
+    description: "Una api rest para un ecommerce que permite la creacion de productos, categorias y usuarios, ademas de la gestion de los mismos, empleando una arquitectura escalable y mantenible",
+    image: "/apiNet.jpg",
+    // demoLink: "https://dragneel98.github.io/MELI-zoom/",
+    codeLink: "https://github.com/dragneel98/apiEcomerce",
+    tags: ["C#", ".NET", "PostgreSQL", "Entity Framework"]
   },
+  {
+    id: 5,
+    title: "MELI-zomm",
+    description: "Me interese por la funcionalidad del zoom de mercado libre y decidi replicarlo",
+    image: "/MELI.png",
+    demoLink: "https://dragneel98.github.io/MELI-zoom/",
+    codeLink: "https://github.com/dragneel98/MELI-zoom",
+    tags: ["typescript", "html", "css", "javascript", "react"]
+  },
+  {
+    id: 6,
+    title: "Traslate GPT",
+    description: "Un traductor utilizando la API de ChatGPT para hacer las traducciones. También cuenta con un botón para invertir el idioma y permite reproducir la traducción para que veas la pronunciación.",
+    image: "/traslate.jpg",
+    demoLink: "",
+    codeLink: "https://github.com/dragneel98/type-script-traslate",
+    tags: ["typescript", "html", "css", "javascript", "react"]
+  },
+
 ]
 
 export default function Projects() {
