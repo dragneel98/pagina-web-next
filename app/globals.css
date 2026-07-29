@@ -14,6 +14,19 @@ body {
   scroll-behavior: smooth;
 }
 
+/* Reset para Next.js App Router: sin esto, <html>/<body> conservan su
+   margen por defecto y quedan scrolleables como ventana completa, ADEMÁS
+   del scroll interno que crea ParticleScroll. Eso produce el doble scroll
+   y hace que ParticleScroll nunca reciba el scroll real (porque el usuario
+   termina scrolleando la ventana, no el div interno del componente). */
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  overflow: hidden;
+}
+
 /* Personalización de la barra de desplazamiento */
 ::-webkit-scrollbar {
   width: 8px;
