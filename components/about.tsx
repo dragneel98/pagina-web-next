@@ -5,6 +5,8 @@ import { TypeAnimation } from "react-type-animation"
 import { Code2, Compass, Lightbulb, Rocket, Smartphone } from 'lucide-react'
 import MatrixRain from './MatrixRain'
 import Image from "next/image"
+import VHS from "./ui/Vhs"
+import Glitch from "./ui/Glitch"
 
 export default function About() {
   const fadeInUp = {
@@ -63,6 +65,7 @@ export default function About() {
         </motion.div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-start">
+
           <motion.div
             initial={{ opacity: 0, x: -50 }}
             whileInView={{ opacity: 1, x: 0 }}
@@ -81,9 +84,11 @@ export default function About() {
                 />
               </div>
               <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent"></div>
+
               <MatrixRain containerClassName="absolute inset-0 mix-blend-screen" />
             </div>
           </motion.div>
+
 
           <motion.div
             initial={{ opacity: 0, x: 50 }}
@@ -122,16 +127,19 @@ export default function About() {
               </div>
             </div>
 
-            <a
-              href="#contact"
-              className="inline-block bg-transparent hover:bg-green-500/10 border border-green-500 text-green-400 hover:text-green-300 font-bold py-2 px-6 rounded-full transition-all transform hover:scale-105"
-              onClick={(e) => {
-                e.preventDefault()
-                document.querySelector("#contact")?.scrollIntoView({ behavior: "smooth" })
-              }}
-            >
-              Hablemos
-            </a>
+            <Glitch>
+              <a
+                href="#contact"
+                className="inline-block bg-transparent hover:bg-green-500/10 border border-green-500 text-green-400 hover:text-green-300 font-bold py-2 px-6 rounded-full transition-all transform hover:scale-105"
+                onClick={(e) => {
+                  e.preventDefault()
+                  document.querySelector("#contact")?.scrollIntoView({ behavior: "smooth" })
+                }}
+              >
+                Hablemos
+              </a>
+            </Glitch>
+
           </motion.div>
         </div>
 
@@ -155,7 +163,7 @@ export default function About() {
             ))}
           </div>
         </div>
-      </div>
-    </section>
+      </div >
+    </section >
   )
 }

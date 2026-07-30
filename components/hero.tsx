@@ -3,6 +3,7 @@
 import { motion } from "framer-motion"
 import { TypeAnimation } from "react-type-animation"
 import { ArrowDown } from "lucide-react"
+import Glitch from "./ui/Glitch"
 
 export default function Hero() {
   return (
@@ -13,7 +14,7 @@ export default function Hero() {
         transition={{ duration: 0.8 }}
         className="text-center max-w-4xl mx-auto"
       >
-        <h1 className="text-4xl md:text-6xl font-bold mb-6">
+        <h1 className="text-4xl md:text-6xl font-bold mb-6 min-h-[120px] md:min-h-[160px] flex items-center justify-center flex-wrap gap-x-3">
           <span className="text-white">Hola, soy </span>
           <span className="text-green-400">
             <TypeAnimation
@@ -40,26 +41,30 @@ export default function Hero() {
           transition={{ delay: 1.5, duration: 0.8 }}
           className="flex flex-col sm:flex-row gap-4 justify-center"
         >
-          <a
-            href="#projects"
-            className="bg-green-500 hover:bg-green-600 text-black font-bold py-3 px-8 rounded-full transition-all transform hover:scale-105"
-            onClick={(e) => {
-              e.preventDefault()
-              document.querySelector("#projects")?.scrollIntoView({ behavior: "smooth" })
-            }}
-          >
-            Ver Proyectos
-          </a>
-          <a
-            href="#contact"
-            className="bg-transparent hover:bg-green-500/10 border border-green-500 text-green-400 hover:text-green-300 font-bold py-3 px-8 rounded-full transition-all transform hover:scale-105"
-            onClick={(e) => {
-              e.preventDefault()
-              document.querySelector("#contact")?.scrollIntoView({ behavior: "smooth" })
-            }}
-          >
-            Contáctame
-          </a>
+          <Glitch>
+            <a
+              href="#projects"
+              className="bg-green-500 hover:bg-green-600 text-black font-bold py-3 px-8 rounded-full transition-all transform hover:scale-105"
+              onClick={(e) => {
+                e.preventDefault()
+                document.querySelector("#projects")?.scrollIntoView({ behavior: "smooth" })
+              }}
+            >
+              Ver Proyectos
+            </a>
+          </Glitch>
+          <Glitch>
+            <a
+              href="#contact"
+              className="bg-transparent hover:bg-green-500/10 border border-green-500 text-green-400 hover:text-green-300 font-bold py-3 px-8 rounded-full transition-all transform hover:scale-105"
+              onClick={(e) => {
+                e.preventDefault()
+                document.querySelector("#contact")?.scrollIntoView({ behavior: "smooth" })
+              }}
+            >
+              Contáctame
+            </a>
+          </Glitch>
         </motion.div>
       </motion.div>
 
