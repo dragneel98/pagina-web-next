@@ -6,7 +6,7 @@ import { Code2, Database } from "lucide-react"
 import { TbBrandCSharp } from "react-icons/tb";
 import {
   SiHtml5,
-  SiCss3,
+  SiCss,
   SiJavascript,
   SiTypescript,
   SiReact,
@@ -34,7 +34,7 @@ const skillsData = [
     description: "Creando interfaces modernas y responsivas",
     technologies: [
       { name: "HTML5", icon: <SiHtml5 className="h-6 w-6 text-orange-500" /> },
-      { name: "CSS3", icon: <SiCss3 className="h-6 w-6 text-blue-500" /> },
+      { name: "CSS3", icon: <SiCss className="h-6 w-6 text-blue-500" /> },
       { name: "JavaScript", icon: <SiJavascript className="h-6 w-6 text-yellow-400" /> },
       { name: "TypeScript", icon: <SiTypescript className="h-6 w-6 text-blue-600" /> },
       { name: "React", icon: <SiReact className="h-6 w-6 text-cyan-400" /> },
