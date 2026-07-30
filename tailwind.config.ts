@@ -1,5 +1,4 @@
 import type { Config } from "tailwindcss"
-import daisyui from 'daisyui';
 
 const config = {
   darkMode: ["class"],
@@ -21,27 +20,7 @@ const config = {
   },
   plugins: [
     require('@tailwindcss/typography'),
-    daisyui,
   ],
-  daisyui: {
-    themes: [
-      {
-        mytheme: {
-          "primary": "#50fa7b",
-          "secondary": "#1f2937",
-          "accent": "#f43f5e",
-          "neutral": "#1f2937",
-          "base-100": "#ffffff",
-        },
-      },
-    ],
-    darkTheme: "dark",
-    base: true,
-    styled: true,
-    utils: true,
-    logs: true,
-    rtl: false,
-  },
 } satisfies Config
 
 export default config
