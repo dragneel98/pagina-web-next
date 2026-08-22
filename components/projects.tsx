@@ -30,8 +30,8 @@ const projectsData = [
     id: 3,
     title: "Ecommerce",
     description: "Un ecommerce que incluye un sistema de carrito de compras intuitivo y eficiente, así como herramientas de filtrado y busqueda de productos para facilitar la selección de artículos",
-    image: "/angularshop.jpg",
-    demoLink: "https://dragneel98.github.io/ecomerce-angular/",
+    image: "/public/ecomerce-angular.jpg",
+    demoLink: "https://dragneel98.github.io/ecomerce-angular",
     codeLink: "https://github.com/dragneel98/ecomerce-angular",
     tags: ["html", "css", "javascript", "angular"]
   },
